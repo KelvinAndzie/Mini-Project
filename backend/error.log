@@ -1,0 +1,25 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:03:10] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:03:10] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:03:19] "GET /signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:03:29] "[32mPOST /createaccount HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:03:29] "GET /signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:03:44] "[32mPOST /createaccount HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:03:44] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:03:52] "[32mPOST /login_account HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:03:52] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:04:11] "GET /create_profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:04:37] "[32mPOST /predict HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:04:37] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:04:45] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:04:48] "[32mPOST /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:04:48] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:04:54] "[32mPOST /login_account HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:04:54] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:05:03] "GET /create_profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:05:13] "[32mPOST /predict HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:05:13] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:05:53] "[32mPOST /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 02:05:53] "GET /login HTTP/1.1" 200 -

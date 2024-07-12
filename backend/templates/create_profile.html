@@ -1,0 +1,29 @@
+{% include 'header.html' %}
+{% include 'navbar.html' %}
+
+<body>
+    <!-- <p class="fw-semibold text-start px-4 my-2 fs-4">Hello, {{ user }}</p> -->
+    <h3 class=" text-start px-4 fs-6 text-muted">Select your skill level for the following</h3>
+    <div class="d-flex justify-content-center align-items-center card mx-4 p-2">
+        {% include('error_message.html') %}
+        <form class="mx-4 mb-4 row g-3" action="/predict" method="post">
+            {% for skill in skills %}
+            <div class="col-md-4">
+                <label for="select-skill-{{ loop.index }}">{{ skill }}</label>
+                <select class="form-select" id="select-skill-{{ loop.index }}" name="select-skill-{{ loop.index }}">
+                    <option value="not interested">Not Interested</option>
+                    <option value="poor">Poor</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="average">Average</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="professional">Professional</option>
+                </select>
+            </div>
+            {% endfor %}
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
