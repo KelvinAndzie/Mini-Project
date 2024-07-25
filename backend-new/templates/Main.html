@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career.ly</title>
+  <style>
+    body {
+      background: url("{{ url_for('static',filename='images/HomePage.jpg') }}") center;
+      font-family: sans-serif;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+    }
+
+    header {
+      background-color: teal;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+    }
+
+    .navbar {
+      position: absolute;
+      right: 10%;
+      bottom: 90%;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    h3 {
+
+      color: black;
+      display: flex;
+    }
+
+
+    .hero {
+      text-align: left;
+      padding: 50px;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      color: #420c09;
+    }
+
+    .hero pre {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .arrow {
+      cursor: pointer;
+      display: inline-block;
+      height: 40px;
+      margin-left: 40px;
+      margin-right: 40px;
+      position: relative;
+      line-height: 2.5em;
+      padding-left: 1em;
+      padding-right: 2em;
+      background: teal;
+      color: black;
+      text-decoration: none;
+
+      &:after {
+
+        border-left: 20px solid teal;
+      }
+    }
+
+    .arrow:after {
+
+      content: "";
+      position: absolute;
+      border-bottom: 20px solid transparent;
+      border-top: 20px solid transparent;
+      height: 0px;
+      width: 0px;
+      margin-right: -20px;
+      right: 0;
+    }
+
+    .arrow:hover,
+    .arrow:active {
+      background: white;
+      color: black;
+
+      &:after {
+
+        border-left: 20px solid white;
+      }
+    }
+
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 10%;
+      background-color: teal;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="{{url_for('login')}}">LOGIN</a>
+      <a href="{{url_for('signup')}}">SIGN UP</a>
+    </nav>
+  </header>
+  <main>
+
+    <h3><b>Career.ly</b></h3>
+
+    <section class="hero">
+      <h1>Intelligent Career Guidance System</h1>
+      <h2>Discover yourself</h2>
+      <pre> Take the test to find the 
+ perfect career for you after
+ school.
+        </pre>
+      <a class="arrow" type="button" href="{{url_for('signup')}}">REGISTER</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Career.ly 2024</p>
+  </footer>
+</body>
+
+</html>

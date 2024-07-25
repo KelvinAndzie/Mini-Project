@@ -1,0 +1,23 @@
+{% include 'header.html' %}
+{% include 'navbar.html' %}
+
+<body>
+    <hr>
+    <h3 class=" text-start px-4 fs-6 text-muted">{{ summary }}</h3>
+    <div class=" justify-content-center align-items-center mx-4 p-4">
+        <ol class="list-group list-group-numbered">
+            {% for recommendation in recommendations %}
+            <li class="list-group-item">{{ recommendation }}</li>
+            {% endfor %}
+        </ol>
+    </div>
+    <center>
+        <div class="mx-4 mb-4 row g-4">
+            <div class="col-12">
+                <a href="{{ url_for('create_profile') }}" class="btn btn-success btn-lg">Get Recommendation</a>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>

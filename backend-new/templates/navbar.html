@@ -1,0 +1,10 @@
+<body>
+    <nav class="navbar" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="fw-semibold navbar-brand">Hello, {{ user }}</a>
+            <a class="btn btn-dark mx-2" href="{{ url_for('home') }}"><i class="bi bi-house"></i> Home</a>
+            <form class="d-flex mx-4" action="{{ url_for('logout') }}" method="post">
+                <button class="btn btn-danger" type="submit"><i class="bi bi-box-arrow-left"></i> Logout</button>
+            </form>
+        </div>
+    </nav>
