@@ -22,7 +22,7 @@ CareerWise is an innovative career guidance system designed to help individuals 
 ### Clone the Repository
 ```bash
 https://github.com/KelvinAndzie/Mini-Project
-cd CareerWise
+cd Mini-Project
 ```
 
 ### Create and Activate Virtual Environment
