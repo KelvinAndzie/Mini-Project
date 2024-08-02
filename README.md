@@ -14,13 +14,14 @@ CareerWise is an innovative career guidance system designed to help individuals 
 ## Requirements
 - Python 3.x
 - Virtual Environment
+- MySQL
 - `requirements.txt` file with necessary dependencies
 
 ## Installation
 
 ### Clone the Repository
 ```bash
-[git clone https://github.com/yourusername/CareerWise.git](https://github.com/KelvinAndzie/Mini-Project.git)
+https://github.com/KelvinAndzie/Mini-Project
 cd CareerWise
 ```
 
@@ -35,10 +36,30 @@ source env/bin/activate   # On Windows, use `env\Scripts\activate`
 pip install -r requirements.txt
 ```
 
+### MySQL Setup
+1. **Install MySQL**: Ensure MySQL is installed on your machine. You can download it from [MySQL Downloads](https://dev.mysql.com/downloads/).
+
+2. **Create Database**:
+   - Log into MySQL:
+     ```bash
+     mysql -u root -p
+     ```
+   - Create a new database:
+     Copy career_guidance.sql from database directory
+
+3. **Modify Database Configuration**:
+   - Open `databases.py` and update the following fields with your MySQL credentials:
+     ```python
+     host = "your_mysql_host"
+     user = "your_mysql_username"
+     password = "your_mysql_password"
+     database = "careerwise_db"
+     ```
+
 ## Usage
-After installing the dependencies, you can run the project using the following command:
+After installing the dependencies and setting up MySQL, you can run the project using the following command:
 ```bash
-python main.py
+python app.py
 ```
 
 ## Development
@@ -46,14 +67,6 @@ For development, ensure you follow these steps to maintain code quality and cons
 1. Follow the project's coding standards.
 2. Write and run tests to ensure code functionality.
 3. Document your code and update this `README.md` as necessary.
-
-## Contributing
-If you would like to contribute to the project, please follow these steps:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Create a new Pull Request.
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
