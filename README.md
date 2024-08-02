@@ -20,7 +20,7 @@ CareerWise is an innovative career guidance system designed to help individuals 
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/CareerWise.git
+[git clone https://github.com/yourusername/CareerWise.git](https://github.com/KelvinAndzie/Mini-Project.git)
 cd CareerWise
 ```
 
